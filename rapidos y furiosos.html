@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rápidos y Furiosos</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0d0d0d;
+            color: #fff;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ff0000, #000);
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff0000;
+        }
+
+        section {
+            padding: 40px 10%;
+        }
+
+        .hero {
+            background-image: url('https://wallpapercave.com/wp/wp12181669.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-shadow: 2px 2px 10px #000;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .galeria img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px #ff0000;
+        }
+
+        .autos-destacados {
+            background-color: #111;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .autos-destacados h2 {
+            color: #ff0000;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .equipo {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+
+        /* Animación suave al aparecer */
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        section {
+            animation: fadeIn 1.2s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rápidos y Furiosos</h1>
+        <p>El poder, la velocidad y la pasión por los autos deportivos</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section class="hero" id="inicio">
+        <p>¡Siente la velocidad en tus venas!</p>
+    </section>
+
+    <section id="historia">
+        <h2>Historia de los Carros Deportivos</h2>
+        <p>
+            Los carros deportivos nacieron con el deseo de combinar el diseño elegante con la máxima velocidad. 
+            Desde los clásicos Ferrari y Lamborghini hasta los modernos Bugatti y McLaren, cada modelo representa 
+            una obra de arte sobre ruedas. En el mundo de <b>Rápidos y Furiosos</b>, la adrenalina, la amistad y 
+            la velocidad son parte de una misma historia que inspira a millones.
+        </p>
+    </section>
+
+    <section id="galeria" class="autos-destacados">
+        <h2>Galería de Autos Legendarios</h2>
+        <div class="galeria">
+            <img src="NISSAN GT-R NISMO MY2024_03.jpg" alt="Nissan GTR">
+            <img src="lamborghini aventador.webp" alt="Lamborghini Aventador">
+            <img src="2024-Toyota-GR-Supra-45th-Anniversary-Edition_KL_ReSized_2.jpg" alt="Toyota Supra">
+            <img src="Bugatti ciron.jpeg" alt="Bugatti Chiron">
+            <img src="Mclaren P1.webp" alt="McLaren P1">
+            <img src="Ferrari lfrrari .jpeg" alt="Ferrari LaFerrari">
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto y Más Información</h2>
+        <p>Si eres amante de los carros deportivos y te gustaría saber más, visita:</p>
+        <ul>
+            <li><a href="https://www.ferrari.com" target="_blank">Sitio oficial de Ferrari</a></li>
+            <li><a href="https://www.lamborghini.com" target="_blank">Sitio oficial de Lamborghini</a></li>
+            <li><a href="https://www.bugatti.com" target="_blank">Sitio oficial de Bugatti</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 Rápidos y Furiosos | Proyecto de página web en HTML</p>
+        <div class="equipo">
+            <p>Elaborado por: [Tu nombre aquí]</p>
+        </div>
+    </footer>
+</body>
+</html>
